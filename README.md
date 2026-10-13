@@ -97,20 +97,6 @@ Para evitar el consumo excesivo de energía por muestreo GPS continuo:
 
 ---
 
-## 🛠️ Stack Tecnológico
-
-| Módulo / Función | Tecnología Utilizada |
-| :--- | :--- |
-| **Lenguaje Core** | [Kotlin](https://kotlinlang.org/) |
-| **UI Framework** | [Jetpack Compose](https://developer.android.com/jetpack/compose) |
-| **Inyección de Dependencias** | [Hilt (Dagger)](https://dagger.dev/hilt/) |
-| **Asincronía & Reactividad** | Kotlin Coroutines & `StateFlow` / `SharedFlow` |
-| **Ubicación & Contexto** | Google Play Services (`FusedLocationProviderClient`, `GeofencingClient`, `ActivityRecognitionClient`) |
-| **Base de Datos Local** | [Room Persistence Library](https://developer.android.com/training/data-storage/room) |
-| **Conexión de Red** | Retrofit 2 + OkHttp3 + Kotlinx Serialization |
-| **Programación de Tareas** | Jetpack WorkManager |
-
----
 
 ## 📁 Estructura del Proyecto
 
@@ -143,28 +129,6 @@ com.example.contextigo/
 * Dispositivo móvil físico o Emulador con Google Play Services activos.
 * Una clave API válida para **Google Places API (New)**.
 
-### Pasos de Instalación
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/tu-usuario/ContextiGo.git
-   cd ContextiGo
-   ```
-
-2. **Configurar credenciales locales:**
-   Crea o edita el archivo `local.properties` en la raíz del proyecto y añade tu API Key:
-   ```properties
-   PLACES_API_KEY=TU_API_KEY_DE_GOOGLE_PLACES
-   ```
-
-3. **Sincronizar el proyecto:**
-   Abre el proyecto en Android Studio y ejecuta **Sync Project with Gradle Files**.
-
-4. **Ejecutar la aplicación:**
-   Conecta tu dispositivo Android (asegúrate de habilitar la depuración USB y los permisos de ubicación exacta y en segundo plano) y presione **Run (Shift + F10)**.
-
----
-
 ## 🧪 Escenarios de Prueba y Simulación
 
 Dado que el motor requiere un historial previo de frecuencia para generar recomendaciones, la app incluye un **Panel de Simulación para Pruebas (Mock Data Panel)**:
@@ -174,10 +138,8 @@ Dado que el motor requiere un historial previo de frecuencia para generar recome
 
 ---
 
-## 👥 Equipo y Licencia
+## 👥 Equipo
 
-* **Desarrolladores:** [Nombre de los Integrantes del Equipo]
-* **Curso:** Proyecto Final de Carrera / Ingeniería de Software
-* **Institución:** [Nombre de la Universidad]
-
-Este proyecto está bajo la Licencia **MIT**. Consulta el archivo `LICENSE` para obtener más información.
+* **Desarrolladores:** Giancarlo Aguirre, Cesar Dionicio, Ernesto Salazar
+* **Curso:** Desarrollo Adaptativo
+* **Institución:** Universidad Nacional de Ingeniería
